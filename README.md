@@ -1,4 +1,4 @@
-# EleusisBook uses AstroPaper 📄
+# Infrared Heating Systems uses AstroPaper 📄
 
 ![AstroPaper]
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
