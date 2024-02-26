@@ -1,11 +1,11 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://irsheat/", // replace this with your deployed domain
+  website: "https://irsheat.com/", // replace this with your deployed domain
   author: "David Anderson",
   desc: "Heating Systems | Indoor Heating | General Contracting | ",
   title: "Infrared Radiant Systems",
-  ogImage: "eleusisBookBanner.jpg",
+  ogImage: "https://res.cloudinary.com/dqzj6idvg/image/upload/e_improve,e_sharpen/v1708947315/irsheat/Radiant_Screenshot_2023-01-01_zbwjji.png",
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
@@ -50,7 +50,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Mail",
-    href: "mailto:ste",
+    href: "mailto:stevep@irsheat.com",
     linkTitle: `Send an email to ${SITE.title}`,
     active: true,
   },
