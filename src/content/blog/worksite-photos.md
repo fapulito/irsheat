@@ -20,4 +20,7 @@ description: Worksite Photos and Project Descriptions
 
 ## Collection of Photos from Recent Worksites
 
+<Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947406/irsheat/20230418_172317_p57csz.jpg" alt="Infrared Radiant Heat Flow" width="400" height="200"/>
+
+<Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947471/irsheat/20230105_125938_ohv49n.jpg" alt="Infrared Radiant Heat Flow" width="800" height="800"/>
 
