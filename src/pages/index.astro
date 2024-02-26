@@ -9,6 +9,7 @@ import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
+import { Image } from 'astro:assets';
 
 const posts = await getCollection("blog");
 
@@ -50,6 +51,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         What we do.
       </p>
 
+      <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/e_improve,e_sharpen/v1708947315/irsheat/Radiant_Screenshot_2023-01-01_zbwjji.png" alt="Infrared Radiant Heat Flow" width="800" height="800"/>
       <p>
         Infrared Radiant Systems specializes in installing and servicing Roberts Gordon Infrared heating systems in commercial buildings.
       </p>
