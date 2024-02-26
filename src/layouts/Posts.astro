@@ -7,6 +7,7 @@ import Footer from "@components/Footer.astro";
 import Pagination from "@components/Pagination.astro";
 import Card from "@components/Card";
 import { SITE } from "@config";
+import { Image } from 'astro:assets'
 
 export interface Props {
   currentPage: number;
@@ -19,7 +20,7 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
 
 <Layout title={`Posts | ${SITE.title}`}>
   <Header activeNav="posts" />
-  <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
+  <Main pageTitle="Worksite Photos" pageDesc="See Our Work!">
     <ul>
       {
         paginatedPosts.map(({ data, slug }) => (
@@ -27,6 +28,8 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
         ))
       }
     </ul>
+
+    <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947455/irsheat/20230418_172246_d3sevs.jpg" alt="A bird." width="800" height="800"/>
   </Main>
 
   <Pagination
