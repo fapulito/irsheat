@@ -3,7 +3,7 @@ import type { Site, SocialObjects } from "./types";
 export const SITE: Site = {
   website: "https://irsheat.com/", // replace this with your deployed domain
   author: "David Anderson",
-  desc: "Heating Systems | Indoor Heating | General Contracting | ",
+  desc: "Roberts Gordon Infrared Heating System Installation ",
   title: "Infrared Radiant Systems",
   ogImage: "https://res.cloudinary.com/dqzj6idvg/image/upload/e_improve,e_sharpen/v1708947315/irsheat/Radiant_Screenshot_2023-01-01_zbwjji.png",
   lightAndDarkMode: true,
@@ -34,7 +34,7 @@ export const SOCIALS: SocialObjects = [
     name: "Facebook",
     href: "https://www.facebook.com",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
