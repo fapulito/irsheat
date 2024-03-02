@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "David Anderson",
   desc: "Roberts Gordon Infrared Heating System Installation ",
   title: "Infrared Radiant Systems",
-  ogImage: "https://res.cloudinary.com/dqzj6idvg/image/upload/e_improve,e_sharpen/v1708947315/irsheat/Radiant_Screenshot_2023-01-01_zbwjji.png",
+  ogImage: "https://res.cloudinary.com/dqzj6idvg/image/upload/v1709053504/irsheat/logo-irsystems_ujgdih.png",
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
@@ -32,7 +32,7 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Facebook",
-    href: "https://www.facebook.com",
+    href: "https://www.facebook.com/OverheadProducts/",
     linkTitle: `${SITE.title} on Facebook`,
     active: false,
   },
