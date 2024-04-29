@@ -13,8 +13,10 @@ We have converted numerous maintenance shops away from costly unit heaters and i
 
 ## Contact Infrared Radiant Systems
 
-Email [Infrared Radiant Systems](mailto:stevep@irsheat.com).
+Email [Infrared Radiant Systems](mailto:stevep@irsheat.com) or [Call](tel:937-238-2430) Us Today!
 
-## Discuss a Solution with Overhead Products
+## Visit Our Installation Partners
 
-Contact [Overhead Products](https://overheadproducts.com/contact-us/) to discuss a Specialty HVAC solution today!
+Design Layout and Materials Provided by [Overhead Products](https://overheadproducts.com/contact-us/).
+
+CORAYVAC® Custom Engineered Radiant Heating System Manufactured by [Roberts Gordon](https://www.robertsgordon.com/products/low-intensity-infrared-heaters/corayvac-infrared-heating-system/).
