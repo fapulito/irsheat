@@ -9,7 +9,7 @@ import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
 const posts = await getCollection("blog");
 
@@ -24,9 +24,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      
       <h1>Infrared Radiant Systems</h1>
-      <h1>Your Shield Against the Cold! </h1>
+      <h1>Your Shield Against the Cold!</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -44,46 +43,64 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         <span class="sr-only">RSS Feed</span>
       </a>
 
-      <br>
-      
-      
-      <p>
+      <br />
+
+      <p style="text-align:center">
         What We Do: Install Cutting-Edge Heating Solutions Across the USA!
       </p>
 
-      <p> 
-        Contact  
-        <LinkButton
-        className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-        href="https://overheadproducts.com/contact-us/"
-      >
-        Overhead Products
-      </LinkButton> to discuss a Specialty HVAC solution today!
+      <div style="text-align:center">
+        <p>
+          Call
+          <LinkButton
+            className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+            href="tel:937-238-2430"
+          >
+            Infrared Radiant Systems
+          </LinkButton> today!
+        </p>
 
+        {
+          // only display if at least one social link is enabled
+          socialCount > 0 && (
+            <div class="social-wrapper">
+              <div class="social-links">Send Us An Email!</div>
+              <Socials />
+            </div>
+          )
+        }
+      </div>
+
+      <Image
+        src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1709052322/irsheat/enhanced_radiant_dltyhk.png"
+        alt="Infrared Radiant Heat Flow"
+        width="600"
+        height="400"
+      />
+      <p>
+        Infrared Radiant Systems specializes in installing and servicing Roberts
+        Gordon Infrared heating systems in commercial buildings.
       </p>
 
-      <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1709052322/irsheat/enhanced_radiant_dltyhk.png" alt="Infrared Radiant Heat Flow" width="600" height="400"/>
       <p>
-        Infrared Radiant Systems specializes in installing and servicing Roberts Gordon Infrared heating systems in commercial buildings.
+        Need to heat a warehouse? Look to us to keep your workers warm with a
+        high efficiency, modulating CoRayVac heating system.
       </p>
 
       <p>
-        Need to heat a warehouse?
-        Look to us to keep your workers warm with a high efficiency, modulating CoRayVac heating system.
+        Converting your fleet to liquified natural gas? Since 2020 we have been
+        on the forefront installing Specialty Fuel Heating Systems that are
+        compliant with methane detection systems.
       </p>
 
       <p>
-        Converting your fleet to liquified natural gas?
-        Since 2020 we have been on the forefront installing Specialty Fuel Heating Systems that are compliant with methane detection systems.
+        Are your unit heaters struggling to recover when you open your overhead
+        doors? Choose from a variety of systems that heat the objects, not just
+        the air, in the room.
       </p>
 
-      <p>
-        Are your unit heaters struggling to recover when you open your overhead doors?
-        Choose from a variety of systems that heat the objects, not just the air, in the room.
-      </p>
-
-      <p>
-          Call 
+      <p style="text-align:center">
+        Call
         <LinkButton
           className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
           href="tel:937-238-2430"
@@ -91,22 +108,40 @@ const socialCount = SOCIALS.filter(social => social.active).length;
           Infrared Radiant Systems
         </LinkButton> today!
       </p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Send Us An Email!</div>
-            <Socials />
-          </div>
-        )
-      }
 
-      <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947406/irsheat/20230418_172317_p57csz.jpg" alt="Infrared Radiant Heat Flow" width="600" height="300"/>
+      <Image
+        src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947406/irsheat/20230418_172317_p57csz.jpg"
+        alt="Infrared Radiant Heat Flow"
+        width="600"
+        height="300"
+      />
 
-      <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947419/irsheat/20230520_132459_xazabh.jpg" alt="Roberts Gordon Heating System Installation" width="800" height="800"/>
+      <Image
+        src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947419/irsheat/20230520_132459_xazabh.jpg"
+        alt="Roberts Gordon Heating System Installation"
+        width="800"
+        height="800"
+      />
 
-      <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947471/irsheat/20230105_125938_ohv49n.jpg" alt="Infrared Radiant Heat Flow" width="800" height="800"/>  
+      <Image
+        src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947471/irsheat/20230105_125938_ohv49n.jpg"
+        alt="Infrared Radiant Heat Flow"
+        width="800"
+        height="800"
+      />
     </section>
+
+    <p>
+      <center>
+        Contact
+        <LinkButton
+          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+          href="https://overheadproducts.com/contact-us/"
+        >
+          Overhead Products
+        </LinkButton> to discuss a Specialty HVAC solution today!
+      </center>
+    </p>
 
     <Hr />
 
@@ -161,15 +196,40 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </LinkButton>
     </div>
 
-    <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947411/irsheat/20230520_132601_te3eyl.jpg" alt="Roberts Gordon Heating System Installation" width="800" height="800"/>
+    <Image
+      src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947411/irsheat/20230520_132601_te3eyl.jpg"
+      alt="Roberts Gordon Heating System Installation"
+      width="800"
+      height="800"
+    />
 
-    <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947412/irsheat/20221006_092308_o1w7yf.jpg" alt="Roberts Gordon Heating System Installation" width="800" height="800"/>
+    <Image
+      src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947412/irsheat/20221006_092308_o1w7yf.jpg"
+      alt="Roberts Gordon Heating System Installation"
+      width="800"
+      height="800"
+    />
 
-    <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947176/irsheat/20220315_080948_nlqg1g.jpg" alt="Roberts Gordon Heating System Installation" width="800" height="800"/>
+    <Image
+      src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947176/irsheat/20220315_080948_nlqg1g.jpg"
+      alt="Roberts Gordon Heating System Installation"
+      width="800"
+      height="800"
+    />
 
-    <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947409/irsheat/20230418_172352_zgcz2t.jpg" alt="Roberts Gordon Heating System Installation" width="800" height="800"/>
+    <Image
+      src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947409/irsheat/20230418_172352_zgcz2t.jpg"
+      alt="Roberts Gordon Heating System Installation"
+      width="800"
+      height="800"
+    />
 
-    <Image src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947415/irsheat/20230418_172437_kydymk.jpg" alt="Roberts Gordon Heating System Installation" width="800" height="800"/>
+    <Image
+      src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947415/irsheat/20230418_172437_kydymk.jpg"
+      alt="Roberts Gordon Heating System Installation"
+      width="800"
+      height="800"
+    />
   </main>
 
   <Footer />
