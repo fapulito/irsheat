@@ -21,7 +21,7 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
 <Layout title={`Posts | ${SITE.title}`}>
   <Header activeNav="posts" />
 
-  <Main pageTitle="Links to Worksite Photos" pageDesc="See Our Work!">
+  <Main pageTitle="Photos and Links" pageDesc="See Our Work!">
     <ul>
       {
         paginatedPosts.map(({ data, slug }) => (
@@ -30,11 +30,31 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
       }
     </ul>
 
+    <Image
+      src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947411/irsheat/20230520_132601_te3eyl.jpg"
+      alt="Roberts Gordon Heating System Installation"
+      width="800"
+      height="800"
+    />
+
+    <Image
+      src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947412/irsheat/20221006_092308_o1w7yf.jpg"
+      alt="Roberts Gordon Heating System Installation"
+      width="800"
+      height="800"
+    />
+
+    <Image
+      src="https://res.cloudinary.com/dqzj6idvg/image/upload/v1708947176/irsheat/20220315_080948_nlqg1g.jpg"
+      alt="Roberts Gordon Heating System Installation"
+      width="800"
+      height="800"
+    />
+
     <script
       is:inline
       src="https://product-gallery.cloudinary.com/all.js"
-      type="text/javascript"
-    ></script>
+      type="text/javascript"></script>
 
     <div id="my-gallery-3" style="max-width:80%"></div>
 
