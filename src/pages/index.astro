@@ -11,6 +11,8 @@ import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
 import { Image } from "astro:assets";
 
+import Gallery1 from "@components/Gallery1.astro";
+
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
@@ -134,13 +136,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         is:inline
         src="https://product-gallery.cloudinary.com/all.js"
         type="text/javascript"></script>
-
-      <div id="my-gallery" style="max-width:80%"></div>
-
-      <script src="/src/pg_widget.js" type="text/javascript"></script>
-
-      <div id="my-gallery" style="max-width:80%;margin:auto"></div>
     </section>
+
+    <Gallery1 />
 
     <Hr />
 
